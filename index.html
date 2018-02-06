@@ -1,0 +1,67 @@
+
+
+<!-- Sample JS App to calculate/update GPA for students on a web page, since we don't have an actual database to work with yet,
+
+just creates a phony data object called studentsRecords in javascript and uses that to populate page table. This can be treated
+
+like a temporary data store for the page as well, so we'll update that object as necessary and redraw the table when we make
+
+updates -->
+
+<html>
+
+	<head> <!-- BEGIN header -->
+		<title>Student GPA Database</title>
+
+		<!-- Latest compiled and minified bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+		<!-- manually add some padding so the nav bar doesn't overlap with body using inline style
+		we only have to do this because the navbar is fixed to top, you should remove if you take that property away -->
+		<style>
+			body {
+				padding-top: 60px;
+			}
+      table.test td {
+      background-color: none;
+      margin: 12px 12px 12px 12px;
+      padding: 12px 12px 12px 12px;
+    }
+     table.test {
+    border-collapse: separate;
+    border-spacing: 10px;
+    *border-collapse: expression('separate', cellSpacing = '10px');
+    }
+		</style>
+
+	</head> <!-- END header -->
+
+
+<body>
+  <div id="particles-js"> </div>
+  <table class  = "test" style="margin: 0px auto;">
+  <tr>
+    <td> <strong> Name </strong> </td>
+    <td> <strong> Grade </strong> </td>
+  </tr>
+
+  <tr>
+    <td> Kyle </td>
+    <td> Junior </td>
+  <tr>
+
+  <tr >
+    <td> Collin </td>
+    <td> Junior> </td>
+  <tr>
+
+  </table>
+<button onclick="deleteStud()"> Delete Student </button>
+
+<script type="text/javascript" src="index.js"></script>
+</body>
+
+
+
+
+
+</html>
